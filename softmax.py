@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 # Generate a dataset and plot it
 random.seed(0)
 X, y = datasets.make_moons(200, noise=0.20)
-#plt.scatter(X[:,0], X[:,1], s=40, c=y, cmap=plt.cm.Spectral)
+plt.scatter(X[:,0], X[:,1], s=40, c=y, cmap=plt.get_cmap('Spectral'))
 
 
 num_examples = len(X) # training set size
@@ -106,6 +106,12 @@ model = build_model(3, print_loss=True)
 # Plot the decision boundary
 plot_decision_boundary = lambda x:predict(model, x)
 
+plt.title("Decision Boundary for hidden layer size 3")
+plot_decision_boundary
+plt.show()
+
+
+"""
 plt.figure(figsize=(16, 32))
 hidden_layer_dimensions = [1, 2, 3, 4, 5, 20, 50]
 for i, nn_hdim in enumerate(hidden_layer_dimensions):
@@ -114,3 +120,4 @@ for i, nn_hdim in enumerate(hidden_layer_dimensions):
     model = build_model(nn_hdim)
     plot_decision_boundary
 plt.show()
+"""
