@@ -150,7 +150,7 @@ class Layer(object):
 
     def calculate_next_layer_values(self):
         """
-        We are given a mapping matrix (W) from layer 1 to layer 1 + 1, and required to find each layer's neuron's values
+        We are given a mapping matrix (M) from layer 1 to layer 1 + 1, and required to find each layer's neuron's values
         Only thing is the operation operate this is matrix multiplication M x n where n is bias and the number of values
         of neuron in current layer
 
