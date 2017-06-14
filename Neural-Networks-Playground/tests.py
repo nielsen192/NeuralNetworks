@@ -17,4 +17,5 @@ if __name__ == '__main__':
 
     # Print first_network.predict(test_data=train_data)
     first_network.train(**train_parameters)
-    print first_network.predict(test_data=train_data)
+    print(first_network.predict(test_data=train_data))
+
