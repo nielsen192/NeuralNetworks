@@ -1,11 +1,11 @@
 #   XOR.py-A very simple neural network to do exclusive or.
 import numpy as np
 
-epochs = 50           # Number of iterations
+epochs = 8000           # Number of iterations
 inputLayerSize, hiddenLayerSize, outputLayerSize = 2, 4, 1
 
 X = np.array([[0,0], [0,1], [1,0], [1,1]])
-Y = np.array([ [0],   [1],   [1],   [0]])
+Y = np.array([[0],   [1],   [1],   [0]])
 
 def sigmoid (x): return 1/(1 + np.exp(-x))      # activation function
 def sigmoid_(x): return x * (1 - x)             # derivative of sigmoid
