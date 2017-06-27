@@ -18,7 +18,7 @@ import math
 #   https://www4.rgu.ac.uk/files/chapter3%20-%20bp.pdf
 
 class NeuralNetwork:
-    LEARNING_RATE = 13
+    LEARNING_RATE = 4
 
     def __init__(self, num_inputs, num_hidden, num_outputs, hidden_layer_weights = None, hidden_layer_bias = None, output_layer_weights = None, output_layer_bias = None):
         self.num_inputs = num_inputs
@@ -233,6 +233,7 @@ training_sets = [
 ]
 
 nn = NeuralNetwork(len(training_sets[0][0]), 5, len(training_sets[0][1]))
+
 for i in range(1000):
     training_inputs, training_outputs = random.choice(training_sets)
     nn.train(training_inputs, training_outputs)

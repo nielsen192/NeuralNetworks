@@ -15,7 +15,7 @@ n_sample = 300
 
 
 #hyperparameters
-learning_rate = 13.0
+learning_rate = 4.0
 momentum = 0.9
 
 #non deterministic seeding
